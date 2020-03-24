@@ -1,0 +1,78 @@
+Uppgift 1. 
+
+1 2 4 3 5 0 
+0 2 4 3 5 1 
+0 1 4 3 5 2 
+0 1 2 3 5 4 
+0 1 2 3 5 4 
+0 1 2 3 4 5 
+0 1 2 3 4 5 
+
+Uppgift 2.
+
+-1 -2 -4 -3 -5 0 
+-5 -2 -4 -3 -1 0 
+-5 -4 -2 -3 -1 0 
+-5 -4 -3 -2 -1 0 
+-5 -4 -3 -2 -1 0 
+-5 -4 -3 -2 -1 0 
+5 4 3 2 1 0 
+
+Uppgift 3.
+
+1 2 4 3 5 0 
+1 2 4 3 5 0 
+1 2 4 3 5 0 
+5 2 4 3 1 0 
+5 4 2 3 1 0 
+Antal swaps: 6
+
+Uppgift 4.
+
+[0,1] [1,2]
+[0,1] [2,4]
+[0,1] [3,3]
+[0,1] [4,5]
+[1,2] [2,4]
+[1,2] [3,3]
+[1,2] [4,5]
+[2,4] [4,5]
+[3,3] [4,5]
+Antal inversioner:9
+Antal swaps: 6
+5 4 3 2 1 0 
+
+Uppgift 5.
+
+-1
+-8
+-1
+-6
+2
+1
+
+Uppgift 7.
+
+[2], 
+[1], [2], 
+[1], [2], [3], 
+[1], [2], [3], [3], 
+[1], [2], [3], [3], [4], 
+[-2], [1], [2], [3], [3], [4], 
+
+Uppgift 8.
+
+Mergesort:
+53386700
+Talet är antalet nanosekunder för element med längd 100.000.
+
+Quicksort:
+57255600
+
+talet är antalet nanosekunder för element med längd 100.000
+
+Uppgift 9.
+3917500
+
+talet är antalet nanosekunder för element med längd 1000.
+

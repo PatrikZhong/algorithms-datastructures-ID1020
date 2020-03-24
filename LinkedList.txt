@@ -1,0 +1,91 @@
+import java.io.*;
+
+public class LinkedList {
+
+	Node first; // min första nod
+
+	static class Node { // noden innehåller data och nästa nod
+		int data;
+		Node next;
+
+		Node(int d) { // konstruktor
+			this.data = d;
+			next = null;
+		}
+	}
+
+	public static void insert(LinkedList list, int data) {
+
+		Node oldFirst = list.first; // flytta din pekare från first till oldfirst
+
+		Node newFirst = new Node(data); // skapa en ny
+
+		list.first = newFirst;
+
+		newFirst.next = oldFirst;
+
+	}
+
+	public static Node remove(LinkedList list) {
+
+		Node oldFirst = list.first;  //spara din nod du vill ta bort
+		list.first = list.first.next; //första noden är nu 
+
+		return oldFirst;
+
+	}
+
+	public static void newElement(LinkedList list, Node n, int P) {
+
+		int counter = 0;
+
+		for (Node x = list.first; x != null; x = x.next) {
+			// process x.item
+			counter++;
+			if (P == counter) {
+				n.next = x.next;
+				x.next = n;
+
+				break;
+			}
+		}
+
+	}
+
+	public static void sortInsert(LinkedList list, Node n) {
+
+		Node x = list.first;
+		while (x.next != null) {
+			
+			
+
+		}
+
+	}
+
+	public static void main(String[] args) {
+
+		LinkedList firstList = new LinkedList(); //skapa en ny tom lista
+		LinkedList.insert(firstList, 1); //skapa din första nod i listan, med referens firstlist, och ett tomt item.
+		LinkedList.insert(firstList, 2);
+		LinkedList.insert(firstList, 3);
+
+		for (Node x = firstList.first; x != null; x = x.next) {
+			// process x.item
+			System.out.print(x.data);
+		}
+
+		System.out.println("removal" + LinkedList.remove(firstList).data);
+
+		Node elementInsert = new Node(14);
+
+		LinkedList.newElement(firstList, elementInsert, 2);
+
+		for (Node x = firstList.first; x != null; x = x.next) {
+			// process x.item
+			System.out.println(x.data);
+		}
+
+	}
+
+}

@@ -1,0 +1,207 @@
+Fråga 1.
+
+red black tree
+pre: H, C, A, E, O , L W
+in A C E H L W O W
+post A E C L W O H
+
+binary tree
+
+pre: W O E C A L H
+in: A C E H L O W
+post: A C H L E O W
+
+Fråga 2.
+
+Optimalt hade vi velat ha ett primtal för att minimera vår grupp. I och med att detta inte går är det bäst att välja de tal som ahr minst faktorer i sig.
+Detta skulle kunna vara 4711 eller 4713 som enbart har 4 faktorer var.
+4713 med 1, 3, 1571 och 4713.
+4711 med 1, 7, 673, 4711
+
+På detta sätt minimerar vi den cykliska grupperna i modulooperationerna och minimerar antalet krockar. 
+4711 Skulle även kunna väljas för att vi vill använda oss av "1.3" regeln, som säger att size på hashtable borde vara kring 
+1.3 * 2000 stor. Tradeoff mellan minne och speed. Man kan argumentera för att man vill ha primtal så nära som varandra i storlek
+, 4711 kommer mnärmre med 7 och 673.
+
+Fråga 3.
+
+Input: 123Patr4ik123
+Output: Patrik
+
+
+4.
+
+BinarySearchST.java (arg 0) Arraylength: 141491
+
+the 7577
+9.068.700 ns (runt)
+
+BST.java (arg 0) Arraylength: 141491
+
+the 7577
+32.331.700 ns(runt)
+
+Takes longer cause this tree is really really unbalanced probably.
+Recursive function has to go real far down to fetch. Worse case for tree in this case is O(N), worse case for array is O(logN).
+
+Fråga 5.
+
+Valde att använda Binary Search Array. Detta pga av att min implmenetation var att sortera Keys arrayen med hjälp av
+dess "value" värde. Efter sortering har jag sorterad Keys array och när de ber om N till N:te tar jag ut index.
+
+Fråga 6.
+the 7577
+20.811.200 ns 
+
+Snabbare än det obalanserade trädet. Vilket det borde vara. 
+
+Fråga 7.
+
+Collisions in percent: 0.9014751411400475
+Collisions in percent: 0.9925332362046987
+Collisions in percent: 1.0926971407758148
+Collisions in percent: 0.9834274266982335
+Collisions in percent: 0.9925332362046987
+Collisions in percent: 0.9105809506465125
+Collisions in percent: 1.0380622837370241
+Collisions in percent: 0.8650519031141869
+Collisions in percent: 0.9925332362046987
+Collisions in percent: 1.110908759788745
+Collisions in percent: 0.9561099981788381
+Collisions in percent: 0.9834274266982335
+Collisions in percent: 0.9470041886723729
+Collisions in percent: 0.8377344745947914
+Collisions in percent: 1.1382261883081406
+Collisions in percent: 1.1200145692952104
+Collisions in percent: 1.0471680932434895
+Collisions in percent: 0.9834274266982335
+Collisions in percent: 0.9378983791659079
+Collisions in percent: 1.0744855217628846
+Collisions in percent: 1.0926971407758148
+Collisions in percent: 0.8832635221271171
+Collisions in percent: 0.9378983791659079
+Collisions in percent: 0.9652158076853032
+Collisions in percent: 1.2019668548533966
+Collisions in percent: 1.028956474230559
+Collisions in percent: 1.0471680932434895
+Collisions in percent: 1.0107448552176288
+Collisions in percent: 1.0471680932434895
+Collisions in percent: 1.1473319978146057
+Collisions in percent: 0.9652158076853032
+Collisions in percent: 1.08359133126935
+Collisions in percent: 1.0380622837370241
+Collisions in percent: 0.9925332362046987
+Collisions in percent: 0.8832635221271171
+Collisions in percent: 0.874157712620652
+Collisions in percent: 1.0107448552176288
+Collisions in percent: 0.9561099981788381
+Collisions in percent: 0.7648879985430704
+Collisions in percent: 0.7922054270624659
+Collisions in percent: 1.0471680932434895
+Collisions in percent: 1.0926971407758148
+Collisions in percent: 1.0653797122564197
+Collisions in percent: 1.1473319978146057
+Collisions in percent: 1.028956474230559
+Collisions in percent: 0.9925332362046987
+Collisions in percent: 1.1473319978146057
+Collisions in percent: 0.8832635221271171
+Collisions in percent: 0.9925332362046987
+Collisions in percent: 0.8923693316335822
+Collisions in percent: 1.1200145692952104
+Collisions in percent: 1.0107448552176288
+Collisions in percent: 0.9105809506465125
+Collisions in percent: 1.0653797122564197
+Collisions in percent: 0.9287925696594427
+Collisions in percent: 0.8195228555818612
+Collisions in percent: 0.9743216171917684
+Collisions in percent: 1.0016390457111637
+Collisions in percent: 0.9287925696594427
+Collisions in percent: 1.1200145692952104
+Collisions in percent: 0.8559460936077217
+Collisions in percent: 1.110908759788745
+Collisions in percent: 0.9834274266982335
+Collisions in percent: 1.0107448552176288
+Collisions in percent: 0.9743216171917684
+Collisions in percent: 1.0562739027499544
+Collisions in percent: 1.0562739027499544
+Collisions in percent: 0.9196867601529777
+Collisions in percent: 1.028956474230559
+Collisions in percent: 1.0744855217628846
+Collisions in percent: 1.0107448552176288
+Collisions in percent: 0.9925332362046987
+Collisions in percent: 0.9652158076853032
+Collisions in percent: 0.9561099981788381
+Collisions in percent: 0.9014751411400475
+Collisions in percent: 1.0107448552176288
+Collisions in percent: 0.9196867601529777
+Collisions in percent: 1.028956474230559
+Collisions in percent: 0.9196867601529777
+Collisions in percent: 1.028956474230559
+Collisions in percent: 0.9743216171917684
+Collisions in percent: 0.8195228555818612
+Collisions in percent: 1.028956474230559
+Collisions in percent: 0.9743216171917684
+Collisions in percent: 0.9014751411400475
+Collisions in percent: 1.0107448552176288
+Collisions in percent: 1.1382261883081406
+Collisions in percent: 1.0380622837370241
+Collisions in percent: 0.9743216171917684
+Collisions in percent: 0.9834274266982335
+Collisions in percent: 1.0653797122564197
+Collisions in percent: 1.0653797122564197
+Collisions in percent: 0.9561099981788381
+Collisions in percent: 1.1018029502822801
+Collisions in percent: 0.7375705700236751
+Collisions in percent: 1.174649426334001
+Collisions in percent: 0.9561099981788381
+Collisions in percent: 0.9014751411400475
+Collisions in percent: 0.9470041886723729
+Collisions in percent: 0.8650519031141869
+Collisions in percent: 0.7830996175560008
+
+Fråga 8.
+
+Example. Searching for "Knowledge" in the entire text gave:
+
+104201
+139574
+139738
+160318
+186263
+197942
+198349
+205817
+228391
+270240
+307202
+308567
+310791
+376694
+392248
+416606
+427817
+450330
+512876
+550496
+
+Numbers represent which character index the word "knowledge" can be found.
+
+Fråga 9.
+
+LinearProbingHash arg 0, length 141491
+
+7577
+35.217.200 ns
+
+Separatechaining (arg 0), length: 141491
+
+the 7577
+26.939.500 ns
+
+LinearProbing should be faster because theres better room locality so we access very close in memory. 
+
+
+
+
+
+

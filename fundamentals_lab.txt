@@ -1,0 +1,19 @@
+8.
+Array:
+Needs to be initialized to a length, which might require more memory. 
+Arrays are great due to how you can simply access a certain element by its index. One simply needs to move the indexpointer.
+The memory requirements are generally set.
+
+
+Linked:
+Much easier to make it longer and shorter. Its however harder to access certain elements in a certain index and requires more time invested.
+Only pointers a list has is usually at its end or at its head. This pointer needs to be moved.
+Lists also take more memory due how every single node needs not only the item, but also a pointer to next.
+However, this memory can be shrinked or expanded simply by moving stuff. 
+
+9. 
+
+En strategi hade kunnat vara att försöka lägga in extremt många element som input. Förhoppningsvis hade vi kanske fått ett felmeddelande om att vi hade varit out of bounds på vår array.
+Men om koden är bra, hanterar de det genom att till exempel öka längden av arrayn, vanligtvis genom att kanske öka arrayens längd (kanske dubbla eller bara öka med ett konstant värde.
+MEN, problemet med detta är att elementet måste kopieras in i den nya längre arrayen, vilket innebär att det tar väldigt lång tid. 
+I en länkad lista däremot kommer detta knappt vara märkbart, då den bara lägger in de nya elementet där det finns plats i minnet.
